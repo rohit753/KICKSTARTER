@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
 
+import './App.css';
+import { AiFillAlert } from "react-icons/ai";
+import { BsFillBarChartLineFill } from "react-icons/bs";
+import {Navbar} from "./components/ravi/navbar"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
     </div>
   );
 }
