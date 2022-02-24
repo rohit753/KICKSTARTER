@@ -23,15 +23,12 @@ mongoose.connect(process.env.Mongo_url).then(() => console.log("Database connect
 
 
 //routes
-// app.get("/api/test", () => {
-//     console.log("test route sucessful")
-// })
-// using routes
+
 
 app.use(express.json());
 
 
-// app.use("/api/auth", authRoute);
+app.use("/api/auth", authRoute);
 // app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 
