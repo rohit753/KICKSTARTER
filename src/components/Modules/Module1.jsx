@@ -21,7 +21,6 @@ border-top: 5px solid black;
 padding-top: 4.8rem !important;
 padding-bottom: 4.8rem !important;
 
-
 @media (min-width: 795px){
     padding-left: 60px;
     padding-right: 60px;

@@ -6,6 +6,8 @@ import Module5 from './components/Modules/Module5';
 import Module6 from './components/Modules/Module6';
 import Module7 from './components/Modules/Module7';
 
+import Grid1 from './components/Grids/Grid1';
+import Grid2 from './components/Grids/Grid2';
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,9 @@ function App() {
       <Module5 />
       <Module6 />
       <Module7 />
+
+      <Grid1 />
+      <Grid2 />
     </div>
   );
 }
