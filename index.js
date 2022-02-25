@@ -9,6 +9,8 @@ const cartRoute= require("./routes/Cart")
 const orderRoute = require("./routes/Order")
 const cors = require("cors");
 
+
+
 const app = express();
 app.use(cors());
 
