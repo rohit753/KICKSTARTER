@@ -4,10 +4,14 @@ import './App.css';
 import { AiFillAlert } from "react-icons/ai";
 import { BsFillBarChartLineFill } from "react-icons/bs";
 import {Navbar} from "./components/ravi/navbar"
+import {Header} from "./components/ravi/header"
+import {Footer} from "./components/ravi/footer"
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar/>
+      <Header/>
+      <Footer/>
     </div>
   );
 }

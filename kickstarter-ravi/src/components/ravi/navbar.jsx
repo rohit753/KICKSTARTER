@@ -5,7 +5,7 @@ import { GoSearch } from "react-icons/go";
 export const Navbar = () => {
   return (
     <>
-      <div className="container">
+      <div className="cont">
         <div>
           <Link to="" className="link-nav">
             <span className="span-dis">Discover</span>

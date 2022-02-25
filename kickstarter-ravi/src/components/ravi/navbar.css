@@ -2,43 +2,52 @@
 html{
 	font-size:10px;
 }
-.container{
+.cont{
 	font-size:1.4rem;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
 	width:95vw;
 	margin:auto;
+	box-sizing: border-box;
 }
 .img-div{
 	width:180px;
 	height:10rem;
 	font-size:1.4rem;
+	box-sizing: border-box;
 }
 .nav-img{
 	width:100%;
+	box-sizing: border-box;
 }
 .icon-font{
 	font-size:1.6rem;
+	box-sizing: border-box;
 }
 .span-serach{
 	font-size:1.5rem;
 	margin-right: .5rem;
+	box-sizing: border-box;
 }
 .span-login{
 	font-size:1.6rem;
 	margin-left: 2rem;
+	box-sizing: border-box;
 }
 .span-dis{
 	font-size:1.6rem;
+	box-sizing: border-box;
 }
 .span-pro{
 	margin-left:2rem;
 	font-size:1.6rem;
+	box-sizing: border-box;
 }
 .link-nav{
 	text-decoration: none;
 	color: black;
+	box-sizing: border-box;
 }
 .line{
 	width:100%;
@@ -46,9 +55,40 @@ html{
 	background-color:rgb(218, 217, 217);
 }
 
+.media-container{
+	font-size:1.4rem;
+	width:95vw;
+	margin:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	box-sizing: border-box;
+}
+.low-container{
+	font-size:1.4rem;
+	width:95vw;
+	margin:20px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	box-sizing: border-box;
+}
+
+.media-span-pro{
+	margin-left:2rem;
+	font-size:1.6rem;
+	box-sizing: border-box;
+}
+@media(min-width:600px){
+	.media-span-pro{
+		display: none;
+		box-sizing: border-box;
+	}
+}
 @media(max-width:800px){
-	.container{
+	.cont{
 		display:none;
+		box-sizing: border-box;
 	}
 	
 }
@@ -60,39 +100,17 @@ html{
 		display:none;
 	}
 }
-.media-container{
-	font-size:1.4rem;
-	width:95vw;
-	margin:auto;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.low-container{
-	font-size:1.4rem;
-	width:95vw;
-	margin:20px;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-}
 @media(min-width:800px){
 	.media-container{
 		display: none;
+		box-sizing: border-box;
 	}
 	.low-container{
 		display:none;
+		box-sizing: border-box;
 	}
 	.line{
 		display:none;
-	}
-}
-.media-span-pro{
-	margin-left:2rem;
-	font-size:1.6rem;
-}
-@media(min-width:600px){
-	.media-span-pro{
-		display: none;
+		box-sizing: border-box;
 	}
 }
