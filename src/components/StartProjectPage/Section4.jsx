@@ -71,6 +71,7 @@ width: 100%;
 height: 370px;
 margin-left: 0px;
 margin-top: 0px;
+margin-bottom: 60px;
 display: flex;
 flex-direction: row;
 `
@@ -92,8 +93,7 @@ margin-left: 0px;
 margin-top: 0px;
 font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 30px;
-font-weight:700;
-
+font-weight: 700;
 `
 const Td2 = styled.div`
 /* border: 1px solid black; */

@@ -56,7 +56,7 @@ a:hover{
 }
 `;
 
-const Section11 = () => {
+const Section8 = () => {
   return (
     <Container>
       <Div>
@@ -73,4 +73,4 @@ const Section11 = () => {
   )
 }
 
-export default Section11
+export default Section8

@@ -15,7 +15,8 @@ import Section3 from "./components/StartProjectPage/Section3";
 import Section4 from "./components/StartProjectPage/Section4";
 import Section5 from "./components/StartProjectPage/Section5";
 import Section6 from "./components/StartProjectPage/Section6";
-import Section11 from "./components/StartProjectPage/Section11";
+import Section7 from "./components/StartProjectPage/Section7";
+import Section8 from "./components/StartProjectPage/Section8";
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Section11 />
+      <Section7 />
+      <Section8 />
     </div>
   );
 }
