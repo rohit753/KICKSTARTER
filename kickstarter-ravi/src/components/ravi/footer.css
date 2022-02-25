@@ -61,6 +61,9 @@
 .f-container-sm-media{
 	margin-top: 1rem;
 }
+.f-container-sm-media:hover{
+	color: green;
+}
 .f-container-sec1{
 	margin-top: 1rem;
 	width:12rem;

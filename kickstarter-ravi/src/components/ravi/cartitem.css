@@ -1,0 +1,31 @@
+
+
+
+
+.cart-container{
+	width:95vw;
+	margin: 2.5vw;
+	display:flex;
+}
+.cart-container-child1{
+	width:49%;
+	color:red;
+	box-sizing: border-box;
+}
+.cart-container-child1-div{
+	margin-top:2rem;
+	width:43vw;
+}
+.cart-container-child1-img{
+	width:100%;
+}
+.cart-container-child2{
+	width:49%;
+	color:green;
+	box-sizing: border-box;
+	height:400px;
+}
+.cart-container-midle{
+	width:1px;
+	background-color:black;
+}
