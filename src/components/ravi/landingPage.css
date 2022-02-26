@@ -99,6 +99,9 @@
 	color:azure;
 	margin-top: 4rem;
 }
+.landing-sec-button:hover{
+	background-color:#044701;
+}
 .landing-sec-button2{
 	box-sizing: border-box;
 	width:15vw;
@@ -139,10 +142,100 @@
 	overflow:hidden;
 }
 .landing-info{
-	width:80vw;
+
 	display:flex;
 	justify-content:space-around;
 	margin:0;
-	margin-left:6vw;
+	padding:3rem;
+	background-color:#eeebd6;
+	box-sizing: border-box;
 	/* margin-right:10vw; */
+}
+.landing-info-sp{
+	
+	width:30vw;
+	font-size:1.6rem;
+	margin:2rem;
+	margin-left:4vw;
+	box-sizing: border-box;
+
+}
+.landing-info-nav{
+	margin:0;
+	height:3rem;
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	
+}
+.landing-info-nav-l{
+	float:left;
+	margin-left:6vw;
+}
+.landing-info-nav-l-c{
+	margin:0;
+	padding:0;
+	width:35vw;
+	display: flex;
+	justify-content:space-between;
+	text-decoration: none;
+	
+}
+.landing-info-nav-l-c-p{
+	font-size: 1.6rem;
+	margin:0rem;
+	padding:0;
+	text-decoration: none;
+}
+
+.landing-info-nav-r{
+	text-decoration: none;
+	padding:0;
+	margin:0;
+	float:right;
+	margin-right:6vw;
+}
+.landing-info-nav-b{
+	margin:0;
+	border:none;
+	font-size:1.6rem;
+	background-color:#028858;
+	color:aliceblue;
+	padding:1.2rem;
+	margin-right: 1rem;
+}
+.landing-info-nav-b:hover{
+	background-color:#044701;
+}
+.landing-info-nav-sp{
+	font-size:1.6rem;
+}
+
+.landing-info-nav-c{
+	clear:both;
+}
+.landing-info-last{
+	margin-top:2rem;
+	width:90vw;
+	margin-left:6rem;
+	height:3rem;
+	display:flex;
+}
+.landing-info-last-c1{
+	width:10vw;
+	margin-right: 2rem;
+}
+.landing-info-last-c2{
+	width:55vw;
+	margin-right: 2rem;
+	height:2rem;
+	background-color:#028858;
+	font-size:1.6rem;
+}
+.landing-info-last-c3{
+	font-size:1.6rem;
+	width:20vw;
+	height:50vw;
+	overflow:auto;
+	padding:2rem;
+
 }
