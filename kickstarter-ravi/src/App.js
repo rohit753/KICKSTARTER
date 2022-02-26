@@ -7,13 +7,15 @@ import {Navbar} from "./components/ravi/navbar"
 import {Header} from "./components/ravi/header"
 import {Footer} from "./components/ravi/footer"
 import {CartItem} from "./components/ravi/cartitem"
+import{LandingPage} from "./components/ravi/landingPage"
 function App() {
   return (
     <div>
       <Navbar/>
-      <Header/>
+      {/* <Header/>
       <Footer/>
-      <CartItem/>
+      <CartItem/> */}
+      <LandingPage/>
     </div>
   );
 }

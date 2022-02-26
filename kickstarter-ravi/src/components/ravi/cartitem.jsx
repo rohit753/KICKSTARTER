@@ -11,7 +11,7 @@ export const CartItem = () => {
   const [item, setItem] = useState([]);
   useEffect(() => {
     getItem();
-  }, []);
+  }, [page]);
   const getItem = async () => {
     let res = await fetch(`http://localhost:3002/item?_page=${page}&_limit=3`);
     let data = await res.json();
@@ -97,14 +97,16 @@ export const CartItem = () => {
         </div>
       </div>
       <div className="cart-container-div">
-        <button>&#60;</button>
+        <button onClick={()=>{
+          setPage(page-1);
+          console.log(page);
+        }} >&#60;</button>
         <button>1</button>
         <button>2</button>
         <button>3</button>
         <button onClick={()=>{
-          setPage((p)=>{
-            return p-1;
-          });
+          setPage(page+1);
+          console.log(page)
         }}>&#62;</button>
       </div>
       <div className="cart-container-clear"></div>
