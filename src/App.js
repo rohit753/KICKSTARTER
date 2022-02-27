@@ -21,12 +21,18 @@
 // import Form1 from "./components/Forms/Form1"
 // import Form2 from "./components/Forms/Form2"
 
-import GridImage1 from "./components/GridImage/GridImage1";
+// import GridImage1 from "./components/GridImage/GridImage1";
+
+import ReactCardSlider from "./components/Carousel/ReactCardSlider"
+import Data from "./data.js" 
+
+import {Sticky} from "./components/Discover/Sticky"
 
 function App() {
   return (
     <div className="App">
-      <GridImage1 />
+    <ReactCardSlider slides={Data}/>
+    <Sticky />
     </div>
   );
 }
