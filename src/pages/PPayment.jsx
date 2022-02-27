@@ -255,7 +255,7 @@ export const PaymentPage = () =>
               <StripeCheckout
                 name="KICKSTARTER"
                 image="https://d3mlfyygrfdi2i.cloudfront.net/10db/ksr-logo-app-banner-border.svg"
-                amount={2800}
+                amount={1000}
                 token={ontoken}
                 stripeKey="pk_test_51KUXUcSHvjPvbOCWIcGQhgDNGktuCObUDcX6EMFR3Bgdqh1SYvHYq5UTL35VmnUD75GxrUbdwQfXzwQCf6yaiY6M00D2tqYhRF"
               >
