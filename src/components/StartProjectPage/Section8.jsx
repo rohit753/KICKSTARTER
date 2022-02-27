@@ -1,6 +1,7 @@
+
 import React from 'react'
 import styled from 'styled-components'
-
+import {Link} from "react-router-dom";
 const Container = styled.div`
 border: 1px solid black;
 width: 100%;
@@ -36,7 +37,6 @@ color: black;
 margin-top: 0px;
 font-weight: 300;
 cursor: pointer;
-
 `;
 
 const Button = styled.button`
@@ -56,7 +56,7 @@ a:hover{
 }
 `;
 
-const Section11 = () => {
+const Section8 = () => {
   return (
     <Container>
       <Div>
@@ -65,12 +65,14 @@ const Section11 = () => {
         <Content>
           - Brian Fargo, successful Kickstarter project creator
         </Content>
+		<Link to="/form">
         <Button>
-          <a href="/">Start a project</a>
+          Start a project
         </Button>
+		</Link>
       </Div>
     </Container>
   )
 }
 
-export default Section11
+export default Section8

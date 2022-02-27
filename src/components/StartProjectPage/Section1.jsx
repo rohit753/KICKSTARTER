@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {Link} from "react-router-dom";
 const Container = styled.div`
 /* border: 1px solid black; */
 width: 100%;
 height: 280px;
-
 `;
 
 const Div = styled.div`
@@ -22,7 +21,6 @@ width: 100%;
 height: 150px;
 font-size: 23px;
 margin-top: 70px;
-
 `;
 
 const Button = styled.button`
@@ -44,9 +42,11 @@ const Section1 = () => {
     <Container>
       <Div>
         <H1><h1>Bring your creative project to life.</h1></H1>
+        <Link to ="/form" >
         <Button>
-          <a href="/">Start a project</a>
+          Start a project
         </Button>
+        </Link>
       </Div>
     </Container>
   )

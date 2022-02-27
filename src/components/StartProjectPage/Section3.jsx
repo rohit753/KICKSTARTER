@@ -36,7 +36,6 @@ color: white;
 margin-top: 20px;
 font-weight: 300;
 cursor: pointer;
-
 `;
 
 const Section3 = () => {

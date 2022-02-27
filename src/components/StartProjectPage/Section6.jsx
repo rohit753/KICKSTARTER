@@ -55,7 +55,6 @@ margin-left: 0px;
 margin-top: 0px;
 display: flex;
 flex-direction: row;
-
 `
 const Section2 = styled.table`
 border: 1px solid white;
@@ -86,7 +85,6 @@ margin-top: 0px;
 font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 30px;
 font-weight:700;
-
 `
 const Td2 = styled.div`
 border: 1px solid white;
@@ -98,7 +96,7 @@ font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 1.3rem;
 `
 
-const Section4 = () => {
+const Section6 = () => {
   return (
     <Container>
         <Border>
@@ -150,4 +148,4 @@ const Section4 = () => {
   )
 }
 
-export default Section4
+export default Section6

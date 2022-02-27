@@ -27,11 +27,11 @@ export const Header = () => {
           <Link className="h-link" to="">Musics</Link>
         </div>
         <div className="container-child">
-          <Link className="h-link" to="">Pblishing</Link>
+          <Link className="h-link" to="">Publishing</Link>
         </div>
       </div>
       <div className="h-line"></div>
-	  <div>from here body section started</div>
+	  
     </>
   );
 };

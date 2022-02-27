@@ -11,14 +11,14 @@ export const Navbar = () => {
             <span className="span-dis">Discover</span>
           </Link>
 
-          <Link to="" className="link-nav">
+          <Link to="/startproject" className="link-nav">
             <span className="span-pro">Start a project</span>
 			
           </Link>
         </div>
 
         <div className="img-div">
-          <Link to="" className="link-nav">
+          <Link to="/" className="link-nav">
             <img
               className="nav-img"
               src="https://logos-world.net/wp-content/uploads/2020/10/Kickstarter-Logo-700x394.png"
