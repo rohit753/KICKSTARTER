@@ -8,8 +8,11 @@ import { useContext } from "react";
 import { CartContext } from "../components/contexts/cartitemContext";
 // import AddShoppingCart from '@mui/icons-material/AddShoppingCart';
 import "./Payment.css";
+import { useNavigate } from "react-router-dom";
 
-export const PaymentPage = () => {
+export const PaymentPage = () =>
+{
+    const navigate = useNavigate();
   const { item } = useContext(CartContext);
   const [stoken, setstoken] = useState(null);
 
@@ -27,7 +30,8 @@ export const PaymentPage = () => {
             tokenId: stoken.id,
             amount: 1000,
           }
-        );
+          );
+          navigate("/")
         console.log(res);
       } catch (err) {
         console.log(err);
