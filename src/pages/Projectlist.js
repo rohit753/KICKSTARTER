@@ -12,6 +12,7 @@ const Container = styled.div`
   font-weight: 300;
   /* scale: 0.7; */
   /* align-items: center; */
+  /* align-items: center; */
 `;
 const DivM = styled.div`
 display: flex;
