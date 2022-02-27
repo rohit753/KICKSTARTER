@@ -7,8 +7,14 @@ const authRoute = require("./routes/auth")
 const productRoute= require("./routes/Product")
 const cartRoute= require("./routes/Cart")
 const orderRoute = require("./routes/Order")
+// const sRoute = require("./routes/Stripe");
+const payroute=require("./routes/Stripe")
 const cors = require("cors");
 const multer = require("multer");
+const stripeRoute = require("./routes/stripe");
+const path =require("path")
+
+// const cors = require("cors");
 
 
 
@@ -21,6 +27,11 @@ app.use(cors());
 
 
 dotenv.config();
+
+app.use(
+  "/Public/Images",
+  express.static(path.join(__dirname, "/Public/Images"))
+);
 
 // Mongo Connect
 
@@ -60,6 +71,7 @@ app.use("/api/products", productRoute);
 
 app.use("/api/cart", cartRoute);
 // app.use("/api/order", orderRoute);
+app.use("/api/checkout", stripeRoute);
 
 // 
 // server start om port

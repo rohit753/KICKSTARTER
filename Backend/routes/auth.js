@@ -34,7 +34,7 @@ router.post("/register", async (req, res) => {
       let mailoption = {
         from: "kickstarter57@gmail.com",
         to: savedUser.email,
-        subject: "Mail for successful user registeration",
+        subject: "Mail for successful user registration",
         text: "Thank you for registering at Kick starter, please feel free to mail us for any query or suggestions. ",
       };
 
@@ -55,7 +55,9 @@ router.post("/register", async (req, res) => {
 
 // Login========================
 
-router.post("/login", async (req, res) => {
+router.post("/login", async (req, res) =>
+{
+  console.log(req.body)
     try {
         const user = await User.findOne({ username: req.body.username })
 
@@ -78,7 +80,7 @@ router.post("/login", async (req, res) => {
         );
 
         const { password, ...others } = user._doc;
-
+        console.log("logged in")
         res.status(200).json({ ...others,accessToken });
 
     } catch(err) { 
