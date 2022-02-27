@@ -13,7 +13,7 @@ import {Register} from "./pages/Register";
 import Projectlist from "./pages/Projectlist"
 function App() {
   return (
-    <div className="App" >
+    <div className="Appp" >
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/detail" element={<LandingPage />}></Route>
