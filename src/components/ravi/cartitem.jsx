@@ -20,7 +20,7 @@ export const CartItem = () => {
     getItem();
   }, [lone]);
   const getItem = async () => {
-    let res = await fetch(`http://localhost:3500/api/products`);
+    let res = await fetch(`https://kickstarterapi.herokuapp.com/api/products`);
     let data = await res.json();
     let aa = Math.floor(Math.random()*10)
     setPage(data[aa])

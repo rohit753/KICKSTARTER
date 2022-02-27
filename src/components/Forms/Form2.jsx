@@ -169,7 +169,7 @@ const Form2 = () => {
             </Div4>
             <Div5>
             <Button>
-                <Link to="/form3">Next: Location</Link>
+                <Link to="/createpage">Next: Location</Link>
             </Button>
             </Div5>
         </Border>
