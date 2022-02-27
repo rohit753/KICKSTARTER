@@ -19,12 +19,14 @@
 // import Section8 from "./components/StartProjectPage/Section8";
 
 // import Form1 from "./components/Forms/Form1"
-import Form2 from "./components/Forms/Form2"
+// import Form2 from "./components/Forms/Form2"
+
+import GridImage1 from "./components/GridImage/GridImage1";
 
 function App() {
   return (
     <div className="App">
-        <Form2 />
+      <GridImage1 />
     </div>
   );
 }
