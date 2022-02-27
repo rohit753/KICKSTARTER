@@ -144,6 +144,7 @@ export const CartItem = () => {
         }}>&#62;</button>
       </div>
       <div className="cart-container-clear"></div>
+      
     </>
   );
 };
