@@ -7,6 +7,7 @@ import api from "../api/baseurl";
 // import GoogleIcon from '@mui/icons-material/Google';
 // import { Facebook } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const box = {
   margin: "30px 36% 30px 37%",
@@ -54,7 +55,9 @@ const apple = {
   fontSize: "20px",
 };
 
-export const Register = () => {
+export const Register = () =>
+{
+  const navigate = useNavigate();
   // const history = useHistory()
   // const [user, setUser] = useState({
   //     name: "",
@@ -103,7 +106,9 @@ export const Register = () => {
     try {
       const response = await api.post("/api/auth/register", Regobj);
       console.log(response.data);
-      if (response.data.username === Regobj.username) {
+      if (response.data.username === Regobj.username)
+      {
+        navigate("/login")
         setisreg(true);
         console.log(isregistered);
       } else {
@@ -204,7 +209,7 @@ export const Register = () => {
         </Link>
         <div style={{ textAlign: "center" }}>
           {" "}
-          {"error" && <h5>Invalid credentials</h5>}{" "}
+          {"error" && <h5></h5>}{" "}
         </div>
         <p
           style={{

@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 // import GoogleIcon from '@mui/icons-material/Google';
 // import FacebookIcon from '@mui/icons-material/Facebook';
-
+import { useNavigate } from "react-router-dom";
 
 const box = {
     margin: "30px 36% 30px 37%",
@@ -56,6 +56,7 @@ const apple = {
 
 export const Login = ({handleuser}) =>
 {
+    const navigate = useNavigate();
     console.log(handleuser)
     const [username, setusername] = useState("");
     const [password, setpassword] = useState("");
@@ -65,6 +66,7 @@ export const Login = ({handleuser}) =>
     const handleClick = (e) =>
 
     {
+        navigate("/")
         e.preventDefault();
         let user = {
             user: username,
@@ -150,7 +152,7 @@ export const Login = ({handleuser}) =>
                 </button>
                 <div style={{ textAlign: "center" }}>
                     {" "}
-                    {"error" && <h5>Invalid credentials</h5>}{" "}
+                    {"error" && <h5></h5>}{" "}
                 </div>
                 <p style={{ textAlign: "center" }}>or</p>
                 <button style={apple} >
