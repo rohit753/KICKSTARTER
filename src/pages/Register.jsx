@@ -209,7 +209,7 @@ export const Register = () =>
         </Link>
         <div style={{ textAlign: "center" }}>
           {" "}
-          {"error" && <h5></h5>}{" "}
+          {"error" && <h5>" "</h5>}{" "}
         </div>
         <p
           style={{

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { AddShoppingCart } from "@material-ui/icons";
+// import { AddShoppingCart } from "@material-ui/icons";
 // import { axios } from "axios";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
@@ -18,6 +18,7 @@ export const PaymentPage = () =>
 
   const ontoken = (token) => {
     // console.log(token);
+    navigate("/")
     setstoken(token);
   };
 
@@ -31,7 +32,7 @@ export const PaymentPage = () =>
             amount: 1000,
           }
           );
-          navigate("/")
+        //  
         console.log(res);
       } catch (err) {
         console.log(err);

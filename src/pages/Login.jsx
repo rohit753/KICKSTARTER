@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { useDispatch } from "react-redux";
 import { login } from "../Redux/apicalls";
 import {Link} from "react-router-dom";
@@ -74,8 +74,10 @@ export const Login = ({handleuser}) =>
             error:false
 
         }
+        console.log(user)
         login(dispatch, { username, password }, handleuser)
     }
+    
     // const [user, setUser] = useState({
     //     email: "",
     //     password: ""
@@ -152,7 +154,7 @@ export const Login = ({handleuser}) =>
                 </button>
                 <div style={{ textAlign: "center" }}>
                     {" "}
-                    {"error" && <h5></h5>}{" "}
+                    {"error" && <h5>""</h5>}{" "}
                 </div>
                 <p style={{ textAlign: "center" }}>or</p>
                 <button style={apple} >
