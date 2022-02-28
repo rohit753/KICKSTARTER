@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import api from "../api/baseurl";
+import {Link} from "react-router-dom";
+import {Navbar} from "../components/ravi/navbar";
+import {Footer} from "../components/ravi/footer";
 // import axios from "axios";
 
 const Container = styled.div`
@@ -305,7 +308,8 @@ const Addhomee = () => {
     }
   };
     console.log(dataObj);
-  return (
+  return (<>
+  <Navbar/>
     <Container>
       <Topdiv>
         <h2>New Project </h2>
@@ -643,9 +647,17 @@ const Addhomee = () => {
         <Input type="submit" value="Create Project" name="" />
       </Form>
       { (created)?<h3>Project Created</h3>:""}
+      <Link to="/" >
       <Button> Discard Project </Button>
+      </Link>
+      
+      <Link to="/projectlist" >
       <Button21>Project Pages</Button21>
+      </Link>
+      
     </Container>
+    <Footer/>
+    </>
   );
 };
 

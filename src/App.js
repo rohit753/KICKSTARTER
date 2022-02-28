@@ -9,7 +9,8 @@ import { Payment } from "./components/payment";
 import { Login2 } from "./components/login";
 import { Login } from "./pages/Login";
 import Addhomee from "./pages/Createpage";
-import {Register} from "./pages/Register"
+import {Register} from "./pages/Register";
+import Projectlist from "./pages/Projectlist"
 function App() {
   return (
     <div className="App" >
@@ -22,7 +23,7 @@ function App() {
         <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/createpage" element={<Addhomee />}></Route>
-
+        <Route path="/projectlist" element={<Projectlist/>}></Route>
         <Route path="/signup" element={<Register/>}></Route>
       </Routes>
     </div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import api from "../api/baseurl";
+import {Navbar} from "../components/ravi/navbar";
+import {Footer} from "../components/ravi/footer";
 // import { Container } from 'react-bootstrap'
 const Container = styled.div`
   display: flex;
@@ -107,6 +109,8 @@ const Projectlist = () =>
   },[]);
 
   return (
+    <>
+    <Navbar/>
       <Container>
           <Divnew>
               <Span>lorem</Span>
@@ -155,6 +159,8 @@ const Projectlist = () =>
                 </DivS> */}
           </DivM>
     </Container>
+    <Footer/>
+    </>
   );
 }
 
