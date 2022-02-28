@@ -22,7 +22,7 @@ export const PaymentPage = () => {
     const makepaymentreq = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:3500/api/checkout/payment",
+          "http://kickstarterapi.herokuapp.com/api/checkout/payment",
           {
             tokenId: stoken.id,
             amount: 1000,
