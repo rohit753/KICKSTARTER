@@ -30,7 +30,7 @@ export const Navbar = () => {
             <span className="span-serach">Search</span>
             <GoSearch className="icon-font" />
           </Link>
-          <Link to="" className="link-nav">
+          <Link to="/login" className="link-nav">
             <span className="span-login">Log in</span>
           </Link>
         </div>
