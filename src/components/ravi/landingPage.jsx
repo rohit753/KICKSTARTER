@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import "./landingPage.css";
 import { GoTriangleRight } from "react-icons/go";
 import { BiBookmark } from "react-icons/bi";
