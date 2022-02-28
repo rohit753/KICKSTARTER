@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { login } from "../Redux/apicalls";
+import {Link} from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 // import GoogleIcon from '@mui/icons-material/Google';
 // import FacebookIcon from '@mui/icons-material/Facebook';
@@ -183,11 +184,11 @@ export const Login = ({handleuser}) =>
                 </a>
                 <p style={{ textAlign: "center", marginTop: "25px" }}>
                     New to Kickstarter?{" "}
-                    <a style={{ textDecoration: "none" }} href="google"
+                    <Link to="/signup" style={{ textDecoration: "none" }} href="google"
                     // onClick={() => history.push("/register")}
                     >
                         Sign up
-                    </a>{" "}
+                    </Link>
                 </p>
                 <p
                     style={{
