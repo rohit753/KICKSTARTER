@@ -7,7 +7,8 @@ import {StartForm} from "./components/startform";
 import {StartForm2} from "./components/startform2";
 import {Payment} from "./components/payment";
 import {Login2} from "./components/login";
-import {Login} from "./pages/Login"
+import {Login} from "./pages/Login";
+import Addhomee from "./pages/Createpage";
 function App() {
   return (
     <Routes>
@@ -18,6 +19,7 @@ function App() {
       <Route path ="/form2" element={<StartForm2/>}></Route>
       <Route path ="/payment" element={<Payment/>}></Route>
       <Route path ="/login" element={<Login/>}></Route>
+      <Route path ="/createpage" element={<Addhomee/>}></Route>
     </Routes>
   );
 }
